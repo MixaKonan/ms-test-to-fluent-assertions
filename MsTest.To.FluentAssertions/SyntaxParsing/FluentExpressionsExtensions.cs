@@ -17,7 +17,7 @@ public static class FluentExpressionsExtensions
 
     public static InvocationExpressionSyntax Be(this InvocationExpressionSyntax should, ArgumentSyntax expected)
     {
-        var fluentInvocation = should.Fluent(AssertionInfo.Be).WithArgument(expected).WithArgument(expected);
+        var fluentInvocation = should.Fluent(AssertionInfo.Be).WithArgument(expected);
 
         return fluentInvocation;
     }
